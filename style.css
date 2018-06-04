@@ -1,0 +1,122 @@
+/* ------------------------------ Overriding Defaults --------------------------------------------------------*/
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	background: linear-gradient(-45deg,#e5e5ff,#ccccff,#b2b2ff);
+	min-height: 100vh;
+}
+
+hr{
+  border: 1px solid #7d97ad;
+}
+
+/* ------------------------------ Main styles --------------------------------------------------------*/
+header, main, footer {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* ------------------------------ Header styles --------------------------------------------------------*/
+header{
+  text-align: right;
+  padding: 10px;
+}
+
+header p {
+	padding: 0;
+	margin:0;
+	font-size: 15px;
+}
+
+h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+/* ------------------------------ Main styles --------------------------------------------------------*/
+main{
+}
+
+/* ------- section1 --------*/
+#about{
+	font-family: "Montserrat", sans-serif;
+	background-color: #f2f2f2;
+	color: black;
+	padding: 15px 40px;
+	border-radius: 0 50px;
+	max-width: 60%;
+	margin: 20px auto;
+	text-align: justify;
+	box-shadow: 1px 2px 10px #aaa;
+	font-size: 15px;
+}
+
+/* ------- section2 --------*/
+ #projects {
+	padding: 10px;
+
+}
+
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project img {
+  height:auto;
+  max-width: 300px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ------------------------------ Footer styles --------------------------------------------------------*/
+
+footer{
+  text-align:right;
+  margin-top: 15px;
+  border-top: 1px dashed #999;
+  border-bottom: 1px dashed #999;
+  padding: 0px ;
+}
+
+footer p{
+	padding: 0;
+}
+
+
+/* ------------------------------Responsive optimizations --------------------------------------------------------*/
+@media screen and (min-width: 501px) and (max-width: 1150px){
+  .project img {
+    max-width: 90%;
+  }
+  #project1{
+    width: 50%;
+  }
+  #project2{
+    width: 50%;
+  }
+  #project3{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px){
+  #container{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  #project1, #project2, #project3 {
+    width: 100%;
+  }
+  .project img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
