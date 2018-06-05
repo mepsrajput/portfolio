@@ -1,16 +1,13 @@
 /* ------------------------------ Overriding Defaults --------------------------------------------------------*/
-html, body{
+*{
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 body{
 	background: linear-gradient(-45deg,#e5e5ff,#ccccff,#b2b2ff);
 	min-height: 100vh;
-}
-
-hr{
-  border: 1px solid #7d97ad;
 }
 
 /* ------------------------------ Main styles --------------------------------------------------------*/
@@ -19,21 +16,30 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* ------------------------------ Header styles --------------------------------------------------------*/
+/* ------------------------------ Header --------------------------------------------------------*/
 header{
   text-align: right;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #7d97ad;
 }
 
-header p {
-	padding: 0;
-	margin:0;
-	font-size: 15px;
+header img {
+  width: 50px;
+  height: 50px;
 }
 
 h1{
-	font-size: 30px;
-	margin-bottom: 10px;
+	font-size: 1.8rem;
+	margin-bottom: 5px;
+	font-weight: 200;
+}
+
+header p {
+	font-size: 15px;
+	margin-bottom: 5px;
 }
 
 /* ------------------------------ Main styles --------------------------------------------------------*/
@@ -42,22 +48,34 @@ main{
 
 /* ------- section1 --------*/
 #about{
-	font-family: "Montserrat", sans-serif;
-	background-color: #f2f2f2;
-	color: black;
-	padding: 15px 40px;
-	border-radius: 0 50px;
-	max-width: 60%;
-	margin: 20px auto;
-	text-align: justify;
-	box-shadow: 1px 2px 10px #aaa;
-	font-size: 15px;
+	width: 100%;
+	height: 450px;
+	background: url("coding.jpg") no-repeat center;
+	background-size: cover;
+	margin: 20px auto 30px;
+}
+
+#aboutoverlay {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e1f7db;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
 }
 
 /* ------- section2 --------*/
- #projects {
-	padding: 10px;
+h2{
+  font-weight: 180;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
 
+#projects {
+	padding: 10px;
 }
 
 #container{
@@ -65,6 +83,10 @@ main{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.project {
+	margin-bottom: 20px;
 }
 
 .project img {
@@ -75,38 +97,41 @@ main{
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* ------------------------------ Footer styles --------------------------------------------------------*/
-
-footer{
-  text-align:right;
-  margin-top: 15px;
-  border-top: 1px dashed #999;
-  border-bottom: 1px dashed #999;
-  padding: 0px ;
+h3{
+  font-size: 1.3rem;
+  margin: 10px auto 5px;
+  font-weight: 160;
 }
 
-footer p{
-	padding: 0;
+.project p{
+  font-size: .8rem;
+}
+
+/* ------------------------------ Footer --------------------------------------------------------*/
+footer{
+  text-align:right;
+  margin: 30px auto 20px;
+  border-top: 1.45px dashed #888;
+  border-bottom: 1.45px dashed #888;
+  padding: 10px;
 }
 
 
 /* ------------------------------Responsive optimizations --------------------------------------------------------*/
-@media screen and (min-width: 501px) and (max-width: 1150px){
+@media screen and (min-width: 501px) and (max-width: 1180px){
   .project img {
-    max-width: 90%;
+    max-width: 100%;
   }
-  #project1{
-    width: 50%;
-  }
-  #project2{
-    width: 50%;
-  }
-  #project3{
-    width: 50%;
+  .project{
+    width: calc(50% - 10px);;
   }
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 600px){
+  body{
+	  text-align: center;
+  }
+  
   #container{
     flex-direction: column;
     flex-wrap: nowrap;
@@ -119,4 +144,8 @@ footer p{
     max-width: 100%;
     margin: 0 auto;
   }
+  .project p{
+	margin-bottom: 30px;
+  }
+
 }
