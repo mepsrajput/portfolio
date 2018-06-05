@@ -18,8 +18,8 @@ header, main, footer {
 
 /* ------------------------------ Header --------------------------------------------------------*/
 header{
+  margin: 20px auto 5px;
   text-align: right;
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
