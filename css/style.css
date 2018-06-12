@@ -1,0 +1,404 @@
+/* ------------------------------ Overriding Defaults --------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: verdana, Times, Montserrat, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #eee;
+  height: 100%;
+}
+
+/* ------------------------------ Main Styles --------------------------------------------------------*/
+#main {
+  max-width: 950px;
+  margin: auto;
+  box-shadow: 20px 0px 30px rgba(0, 0, 0, 0.1),
+  -30px 0px 40px rgba(0, 0, 0, 0.1);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Chrome & Opera */
+}
+
+#expertise, #projects, #certi0fications {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+#contact {
+  min-height: 60vh;
+}
+
+.header {
+  background: #333;
+  padding: 1.5rem;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+h2 {
+  display: inline-block;
+  border-left: 1px dashed #fff;
+  border-right: 1px dashed #fff;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
+
+h3 {
+  display: inline-block;
+  border-left: 1px dashed #fff;
+  border-right: 1px dashed #fff;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+/* ------------------------------ Nav --------------------------------------------------------*/
+#navbar {
+  text-align: center;
+}
+
+#logo {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 1.5rem;
+}
+
+#open-slide {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+#side-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(150deg, #cbc0b7, #618bb4);
+  opacity: 0.9;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.8s ease;
+}
+
+#side-menu a {
+  color: #222;
+  display: block;
+  transition: 0.3s ease;
+  font-weight: bold;
+  width: 100px;
+  margin: 3rem auto;
+  font-size: 1rem;
+}
+
+#side-menu a:nth-child(2) {
+  margin-top: 50px;
+}
+
+#side-menu a:hover {
+  color: #000;
+  transition: 0.1s ease;
+  font-size: 1.1rem;
+}
+
+#btn-close {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #444 !important;
+  font-size: 2rem !important;
+  display: block;
+  cursor: pointer;
+}
+
+/* ------------------------------ About styles --------------------------------------------------------*/
+#about {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-details {
+  height: 100vh;
+  width: 40%;
+}
+
+#profile img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  margin-top: 180px;
+}
+
+#intro {
+  padding: 1rem;
+}
+
+#social-links a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.5rem;
+  text-shadow: 1.5px 0 0 #aaa;
+  margin: 0 .6rem;
+  transition: .6s ease;
+}
+
+#social-links a:hover {
+  color: #555;
+}
+
+#hire-button {
+  padding: .4rem 1.5rem;
+  display: inline-block;
+  color: #555;
+  border: 1px solid #ccc;
+  margin-top: 4rem;
+  border-radius: 3rem;
+  color: #333;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+#hire-button:hover {
+  background: #e1e1e1;
+  transition: background .5s ease;
+}
+
+#coding-image {
+  height: 100vh;
+  width: 60%;
+  background: url("/img/coding1.jpg") no-repeat center;
+  background-size: cover;
+  margin: 0;
+}
+
+/* ------- Expertise ----------------------------------------------------*/
+#expertise {
+  text-align: center;
+}
+
+.skill {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#html5, #css3, #javascript, #react {
+  width: 85%;
+  margin: 0 auto;
+  height: 220px;
+  box-shadow: 1px 2px 10px #aaa;
+  border-radius: 0 30%;
+  background-color: #ddd;
+  line-height: 220px;
+  font-size: 4vw;
+  text-shadow: 1px 2px 5px #aaa;
+}
+
+/* ------- Projects --------*/
+#projects {
+  text-align: center;
+}
+
+#tribute-page, #tribute2udacity, #image-gallery, #jsapps {
+  width: 50%;
+}
+
+#pixel-art {
+  width: 100%;
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-text {
+  opacity: 0;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-container:hover .project-image {
+  opacity: 0.3;
+}
+
+.project-container:hover .middle-text {
+  opacity: 1;
+}
+
+.link-text {
+  text-transform: uppercase;
+  background-color: #555;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem 2rem;
+}
+
+/* ------------------------------ Certifications --------------------------------------------------------*/
+#certifications {
+  text-align: center;
+}
+
+.thumbnail {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.certificate {
+  height: 250px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 1px 2px 10px #aaa;
+}
+
+/* ------------------------------ Contact --------------------------------------------------------*/
+#contact-container {
+  margin: 3rem auto;
+  padding-bottom: 2rem;
+}
+
+#form {
+  text-align: left;
+  width: 35%;
+  padding: 0 2rem;
+}
+
+#text-input, #email-input, #textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  background: #eee;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #000;
+  display: inline-block;
+  margin: 0 auto 1.5rem;
+  transition: all 0.5s ease;
+}
+
+#textarea {
+  resize: none;
+  overflow: auto;
+}
+
+#text-input:focus, #email-input:focus, #textarea:focus {
+  outline: 0;
+  border-bottom: 1px solid #444;
+}
+
+#submit-btn {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100px;
+  margin: 0.5rem auto 0 ;
+  border-radius: 3rem;
+  color: #333;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background: #eee;
+}
+
+#submit-btn:hover {
+  background: #e1e1e1;
+  transition: background 0.5s ease;
+}
+
+#submit-btn:focus {
+  outline: none;
+  border: 2px solid #ccc;
+}
+
+#or-container {
+  width: 80px;
+  display: inline-block;
+  padding: 0 5rem !important;
+  margin: 0 auto;
+}
+
+#or-symbol {
+  width: 35px;
+  height: 35px;
+  padding: 0.5rem;
+  color: #f2f2f2;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+#contact-alternative {
+  text-align: left;
+  font-size: 0.9rem;
+  width: 35%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#whatsapp {
+  margin-bottom: 1rem;
+}
+
+#whatsapp i, #email i {
+  color: #000;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+/* ------------------------------ Footer --------------------------------------------------------*/
+#footer {
+  padding: 0.5rem 0;
+  max-width: 950px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#copyright {
+  border-top: 1px dashed #aaa;
+  border-bottom: 1px dashed #aaa;
+  padding: 10px;
+  font-size: 0.8rem;
+}

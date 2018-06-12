@@ -1,0 +1,23 @@
+/* ------------------------------ Intro --------------------------------------------------------*/
+#intro, #dp {
+  margin: 50px auto;
+}
+
+#profile img {
+  margin-top: 6rem;
+}
+
+/* ------------------------------ Projects --------------------------------------------------------*/
+.project img {
+  max-width: 100%;
+}
+
+.project {
+  width: calc(50% - 10px);;
+}
+
+#tribute-page, #tribute2udacity, #image-gallery, #jsapps {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}

@@ -4,51 +4,198 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Pradeep Singh is a Web developer, Blogger and Writer.
+  He creates optimal cost, SEO optimized, responsive websites and web pages.">
+  <meta name="keywords" content="Pradeep Singh, Pradeep Singh Portfolio,
+  Pradeep's Portfolio, Pradeep Web Developer, Front-end Web Developer,
+  website designer, SEO, SEM, SMM">
   <title>Pradeep Singh</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/img/ps6.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 610px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 611px) and (max-width: 1200px)"
+  href="css/tablet.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-  <header>
-	<img src="udacity.svg">
-	<div>
-		<h1>Pradeep Singh</h1>
-		<p>FEND Scholar</p>
-	</div>
-  </header>	
-	
-  <main>
+  <!-- Side Nav -->
+  <nav id="navbar">
+    <div id="open-slide">
+      <span onclick="opensidemenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 20,5" stroke="#999" stroke-width="4"/>
+          <path d="M0,12 20,12" stroke="#999" stroke-width="4"/>
+          <path d="M0,19 20,19" stroke="#999" stroke-width="4"/>
+        </svg>
+      </span>
+    </div>
 
+    <div id="side-menu">
+      <div id="btn-close" onclick="closesidemenu()"><i class="fa fa-times"></i></div>
+
+      <a href="#"><img id="logo" src="img/ps2.png" alt="Udacity Logo"></a>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- About Section -->
     <section id="about">
-		<div id="aboutoverlay"></div>
+      <div id="about-details">
+        <div id="profile">
+          <img src="http://psrajput.com/img/image1.jpg" alt="Pradeep Singh">
+        </div>
+        <div id="intro">
+          <h1>Pradeep Singh</h1>
+          <div id="social-links">
+            <a href="https://www.facebook.com/psrajputofficial/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/mepsrajput" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/+PradeepSinghRajputOfficial/" target="_blank"><i class="fa fa-google-plus"></i></a>
+            <a href="https://www.instagram.com/psrofficial/" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+          <a href="#contact" id="hire-button">Hire Me</a>
+        </div>
+      </div>
+      <div id="coding-image"></div>
     </section>
-	
-    <section id="projects">
-      <h2>Featured Work</h2>
-      <div id="container">
-        <div class="project" id="project1">
-          <img src="http://psrajput.com/img/TributePage.jpg" alt="TributePage">
-          <h3>Tribute Page</h3>
-          <p>https://mepsrajput.github.io/TributePage</p>
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+      <div class="header">
+        <h2>Expertise</h2>
+      </div>
+      <div class="container">
+        <div class="skill">
+          <div id="html5">
+            <p>HTML 5</p>
+          </div>
         </div>
-        <div class="project" id="project2">
-          <img src="http://psrajput.com/img/ImageGallery.jpg" alt="TributePage">
-          <h3>Image Gallery</h3>
-          <p>https://mepsrajput.github.io/ImageGallery</p>
+        <div class="skill">
+          <div id="css3">
+            <p>CSS 3</p>
+          </div>
         </div>
-        <div class="project" id="project3">
-          <img src="http://psrajput.com/img/pixel-art2.png" alt="TributePage">
-          <h3>Pixel Art Maker</h3>
-          <p>https://mepsrajput.github.io/PixelArtMaker</p>
+        <div class="skill" >
+          <div id="javascript">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="skill">
+          <div id="react">
+            <p>React</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="header">
+        <h2>Featured Work</h2>
+      </div>
+      <div class="container">
+        <div class="project-container" id="tribute-page">
+          <img srcset="img/tribute-page-500w.png 600w, img/tribute-page-1300w.png 1000w"
+          src="img/tribute-page-1300w.png" alt="Tribute Page Project" class="project-image">
+          <div class="middle-text">
+            <a href="https://mepsrajput.github.io/TributePage/" target="_blank" class="link-text">View</a>
+          </div>
+        </div>
+        <div class="project-container" id="tribute2udacity">
+          <img srcset="img/tribute2udacity-500w.png 600w, img/tribute2udacity-1300w.png 1000w"
+          src="img/tribute2udacity-1300w.png" alt="Tribute2Udacity Project" class="project-image">
+          <div class="middle-text">
+            <a href="https://tribute2udacity.herokuapp.com" target="_blank" class="link-text">View</a>
+          </div>
+        </div>
+        <div class="project-container" id="image-gallery">
+          <img srcset="img/image-gallery-500w.png 600w, img/image-gallery-1300w.png 1000w"
+          src="img/image-gallery-1300w.png" alt="ImageGallery Project" class="project-image">
+          <div class="middle-text">
+            <a href="https://mepsrajput.github.io/ImageGallery/" target="_blank" class="link-text">View</a>
+          </div>
+        </div>
+        <div class="project-container" id="jsapps">
+          <img srcset="img/jsapps-500w.png 600w, img/jsapps-1300w.png 1000w"
+          src="img/jsapps-1300w.png" alt="JSApps Project" class="project-image">
+          <div class="middle-text">
+            <a href="https://mepsrajput.github.io/JSApps/" target="_blank" class="link-text">View</a>
+          </div>
+        </div>
+        <div class="project-container" id="pixel-art">
+          <img srcset="img/pixel-art-500w.png 600w, img/pixel-art-1300w.png 1000w"
+          src="img/pixel-art-1300w.png" alt="PixelArt Project" class="project-image">
+          <div class="middle-text">
+            <a href="https://codepen.io/mepsrajput/full/yjVrPN/" target="_blank" class="link-text">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <div class="header">
+        <h2>Certifications</h2>
+      </div>
+      <div class="container">
+        <div class = "thumbnail">
+          <img class="certificate" src="img/html-certificate.jpg" alt="HTML certificate">
+        </div>
+        <div class = "thumbnail">
+          <img class="certificate" src="img/css-certificate.jpg" alt="CSS certificate">
+        </div>
+        <div class = "thumbnail">
+          <img class="certificate" src="img/online-marketing.png" alt="Online marketing certificate">
+        </div>
+        <div class = "thumbnail">
+          <img class="certificate" src="img/google-analytics.png" alt="Google analytics certificate">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="header">
+        <h3>Get In Touch</h3>
+      </div>
+      <div class="container" id="contact-container">
+        <form onsubmit="return validateForm()" action="https://formspree.io/viveksingh12126@gmail.com" method="POST" id="form">
+          <input type="text" name="name" id="text-input" placeholder="Full Name" required>
+          <input type="email" name="email" id="email-input" placeholder="Email" required>
+          <textarea name="message" rows="1" id="textarea" placeholder="Enter Your Message" required></textarea>
+          <input type="submit" value="Submit" id="submit-btn">
+        </form>
+        <div id="or-container">
+          <div id="or-symbol">
+            OR
+          </div>
+        </div>
+        <div id="contact-alternative">
+          <div id="whatsapp"><i class="fa fa-whatsapp"></i>7358305612</div>
+          <div id="email"><i class="fa fa-envelope"></i>viveksingh12126@gmail.com</div>
+        </div>
+      </div>
+
+    </section>
   </main>
 
-  <footer>
-    <p>©2018 | All rights reversed.</p>
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div id="copyright">
+      <p><i class="fa fa-copyright"></i>2018 | All rights reversed.</p>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
