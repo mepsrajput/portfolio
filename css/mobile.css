@@ -18,7 +18,7 @@ h1 {
 }
 
 #intro {
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 #social-links a {
@@ -29,8 +29,8 @@ h1 {
 #profile img {
   margin: auto;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
 }
 
 #hire-button {
