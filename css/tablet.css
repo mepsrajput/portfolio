@@ -1,5 +1,6 @@
 /* ------------------------------ Intro --------------------------------------------------------*/
-#intro, #dp {
+#intro,
+#dp {
   margin: 50px auto;
 }
 
@@ -16,7 +17,10 @@
   width: calc(50% - 10px);;
 }
 
-#tribute-page, #tribute2udacity, #image-gallery, #jsapps {
+#tribute-page,
+#tribute2udacity,
+#image-gallery,
+#jsapps {
   width: 100%;
   margin: 2rem auto;
   padding: 2rem 0;
