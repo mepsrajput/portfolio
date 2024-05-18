@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Submission Success</title>
+		<link rel="stylesheet" href="css\mail-success.css" />
+	</head>
+	<body>
+		<div class="success-message-container" id="success-message">
+			<h1>Thank You!</h1>
+			<p>Your message has been successfully sent.</p>
+			<p>You will be redirected in <span id="countdown">5</span> seconds...</p>
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				let countdown = 5; // Countdown duration in seconds
+				const countdownElement = document.getElementById("countdown");
+
+				const countdownInterval = setInterval(() => {
+					countdown--;
+					countdownElement.textContent = countdown;
+					if (countdown <= 0) {
+						clearInterval(countdownInterval);
+						window.location.href = "/";
+					}
+				}, 1000); // Update countdown every second
+			});
+		</script>
+	</body>
+</html>
