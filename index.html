@@ -1,296 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Pradeep Singh - MLOps Engineer & Web Developer</title>
-		<link rel="stylesheet" href="css/styles.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-			integrity="sha512-sS9Ydn0oBd4KYnpaBq6O37Pz7pp3WWc2YF7uX4j5Rm0dzFVrUGgfHDr2ukGRkzUM7kE9lD1g1xEdto5A+u9cGA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer" />
-	</head>
 
-	<body>
-		<!-- Navigation -->
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#articles">Articles</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pradeep Singh - MLOps Engineer & Web Developer</title>
+	<link rel="stylesheet" href="css/styles.css" />
 
-		<!-- Header -->
-		<header id="hero">
-			<div class="container">
-				<h3>
-					Data-driven <strong>Business Success</strong><br />
-					Enabled by <strong><em>MLOps</em></strong>
-				</h3>
+<body>
+	<!-- Navigation -->
+	<nav>
+		<div class="menu-toggle" id="mobile-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<ul class="nav-links" id="nav-links" role="navigation">
+			<li><a href="#about" aria-label="About Section">About</a></li>
+			<li><a href="#projects" aria-label="Projects Section">Projects</a></li>
+			<li><a href="#blog" aria-label="Blog Section">Blog</a></li>
+			<li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+        </ul>
+	</nav>
+
+	<!-- Hero Section -->
+	<header id="hero">
+		<div class="container">
+			<div id="oval-container">
+				<div id="oval-img">
+					<img src="assets\images\pradeep_profile_pic.jpg" alt="Profile Picture" />
+				</div>
 			</div>
-		</header>
+			<h3>
+				Data-driven <strong>Business Success</strong><br />
+				Enabled by <strong><em>MLOps</em></strong>
+			</h3>
+		</div>
+	</header>
 
-		<!-- About Section -->
-		<section id="about">
-			<div class="container">
-				<h1>Pradeep Singh</h1>
-				<h3 id="expertise-text">
-					<strong>MLOps Engineer</strong> with 5+ years of expertise in ML and
-					Data Engineering using cloud.
-				</h3>
-				<p>
-					Proficient in designing and managing infrastructure, deploying, and
-					monitoring production models using GCP (including BigQuery, Dataprep,
-					Dataproc, Data Fusion, Composer, and Storage), along with strong
-					skills in SQL, Python/PySpark, and Git. <br />
-					I currently lead a team of four, focusing on developing data pipelines
-					for model training, execution, and analysis, as well as maintaining
-					credit risk rating application.
-				</p>
-			</div>
-		</section>
+	<!-- About Section -->
+	<section id="about">
+		<div class="container">
+			<h1>Pradeep Singh</h1>
+			<h3 id="expertise-text">
+				<strong>MLOps Engineer</strong> with 5+ years of expertise in ML and
+				Data Engineering using cloud.
+			</h3>
+			<p>
+				Proficient in designing and managing infrastructure, deploying, and
+				monitoring production models using GCP (including BigQuery, Dataprep,
+				Dataproc, Data Fusion, Composer, and Storage), along with strong
+				skills in SQL, Python/PySpark, and Git. <br />
+				I currently lead a team of four, focusing on developing data pipelines
+				for model training, execution, and analysis, as well as maintaining
+				credit risk rating application.
+			</p>
+		</div>
+	</section>
 
-		<div id="oval-container">
-			<div id="oval-img">
-				<img src="assets\images\pradeep_profile_pic.jpg" alt="Your Image" />
+	<!-- Projects Section -->
+	<section id="projects">
+		<div class="container">
+			<h2>Professional Projects</h2>
+			<div id="projects-container">
+				<div class="project-card">
+					<h3>Automated Data Monitoring Pipeline on GCP</h3>
+					<div class="project-details">
+						<div class="tags">
+							<span>Python</span>
+							<span>Automation</span>
+							<span>GVP VM</span>
+							<span>Data</span>
+							<span>Excel</span>
+						</div>
+					</div>
+					<ul>
+						<li>
+							Enhanced <strong>data quality and integrity</strong> by
+							implementing an automated report pipeline to compare base
+							dataset with production data for each variable (numeric and
+							categorical types).
+						</li>
+						<li>
+							<strong>Variable status indicators</strong> (Red, Green, or
+							Yellow) are provided, offering clear visibility into data
+							<strong>distribution drift</strong>.
+						</li>
+					</ul>
+				</div>
+				<!-- Project 2 Card -->
+				<div class="project-card">
+					<h3>Model Monitoring Dashboard on GCP Looker Studio</h3>
+					<div class="project-details">
+						<div class="tags">
+							<span>GCP Looker Studio</span>
+							<span>Bigquery</span>
+							<span>Dashboard</span>
+							<span>Business Intelligence</span>
+						</div>
+					</div>
+					<ul>
+						<li>Integrated key metrics:</li>
+						<li><strong>Attribute Quality Status</strong></li>
+						<li><strong>Model Performance</strong></li>
+						<li><strong>Attribute Importance</strong></li>
+						<li>
+							Resulted in enhanced
+							<strong>data-driven decision-making</strong> capabilities.
+						</li>
+					</ul>
+				</div>
+				<!-- Project 3 Card -->
+				<div class="project-card">
+					<h3>2 Dimensional Risk Rating Web App</h3>
+					<div class="project-details">
+						<div class="tags">
+							<span>HTML</span>
+							<span>CSS</span>
+							<span>JS</span>
+							<span>DOT NET</span>
+							<span>MVC</span>
+							<span>Web Development</span>
+							<span>Credit Risk</span>
+						</div>
+					</div>
+					<p>
+						Overseeing the development and deployment of a 2DRR app used by
+						hundreds of users.
+					</p>
+					<ul>
+						<li>
+							Originally built with <strong>.NET (MVC)</strong>, I manage the
+							necessary updates.
+						</li>
+						<li>
+							Planning its redevelopment using a
+							<strong>modern technology stack</strong>.
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
+	</section>
 
-		<!-- Projects Section -->
-		<section id="projects">
-			<div class="container">
-				<h2>Professional Projects</h2>
-				<div id="projects-container">
-					<div class="project-card">
-						<h3>Data Monitoring Pipeline - Python, GCP</h3>
-						<ul>
-							<li>
-								Enhanced data quality and integrity by implementing an automated
-								report pipeline to compare base dataset with production data for
-								each variable (numeric and categorical types).
-							</li>
-							<li>
-								Variable status indicators (Red, Green, or Yellow) are provided,
-								offering clear visibility into data distribution drift.
-							</li>
-						</ul>
-					</div>
-					<div class="project-card">
-						<h3>Model Monitoring Dashboard on GCP Looker Studio</h3>
-						<p>Integrated key metrics:</p>
-						<ul>
-							<li>Attribute Quality Status</li>
-							<li>Model Performance</li>
-							<li>Attribute Importance</li>
-						</ul>
-						<p>
-							Resulted in enhanced data-driven decision-making capabilities.
-						</p>
-					</div>
-					<div class="project-card">
-						<h3>Project 3</h3>
-						<p>Description of Project 3</p>
-					</div>
-					<!-- <div class="project-card">
-						<h3>Project 4</h3>
-						<p>Description of Project 4</p>
-					</div>
-					<div class="project-card">
-						<h3>Project 5</h3>
-						<p>Description of Project 5</p>
-					</div>
-					<div class="project-card">
-						<h3>Project 6</h3>
-						<p>Description of Project 6</p>
-					</div> -->
+	<!-- Expertise Section -->
+	<section id="expertise">
+		<div class="container flex-parent" id="expertise-container">
+			<div class="skill-container">
+				<div class="skill">
+					<i class="fas fa-database"></i>
 				</div>
+				<p class="skill-heading">Data Preparation</p>
+				<ul class="skill-list">
+					<li>Data Cleaning</li>
+					<li>Data Transformation</li>
+					<li>Data Integration</li>
+				</ul>
 			</div>
-		</section>
+			<div class="skill-container">
+				<div class="skill">
+					<i class="fas fa-chart-line"></i>
+				</div>
+				<p class="skill-heading">Data Analysis</p>
+				<ul class="skill-list">
+					<li>Exploratory Data Analysis</li>
+					<li>Statistical Analysis</li>
+					<li>Data Visualization</li>
+				</ul>
+			</div>
+			<div class="skill-container">
+				<div class="skill">
+					<i class="fas fa-cogs"></i>
+				</div>
+				<p class="skill-heading">Model Training & Execution</p>
+				<ul class="skill-list">
+					<li>Algorithm Selection</li>
+					<li>Feature Engineering</li>
+					<li>Hyperparameter Tuning</li>
+					<li>Model Deployment</li>
+					<li>Scalable Solutions</li>
+					<li>API Integration</li>
+				</ul>
+			</div>
+			<div class="skill-container">
+				<div class="skill">
+					<i class="fas fa-eye"></i>
+				</div>
+				<p class="skill-heading">Model Monitoring</p>
+				<ul class="skill-list">
+					<li>Anomaly Detection</li>
+					<li>Performance Tracking</li>
+					<li>Alerting Systems</li>
+				</ul>
+			</div>
+			<div class="skill-container">
+				<div class="skill">
+					<i class="fas fa-laptop-code"></i>
+				</div>
+				<p class="skill-heading">Web Development</p>
+				<ul class="skill-list">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Frameworks (e.g., React, Angular)</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-		<!-- Blog Section -->
-		<section id="blog">
-			<div class="container">
-				<h2>Top Articles</h2>
-				<div class="blog-posts">
-					<div class="blog-post">
-						<img
-							src="assets\images\SAS_proc_freq_with_Python.png"
-							alt="SAS Proc with Python image" />
-						<h3>SAS Proc Freq with Python?</h3>
-						<div class="metrics-and-button">
-							<div class="metrics">
-								<p><i class="fas fa-hands-clapping"></i>16</p>
-								<p><i class="fas fa-eye"></i>9k</p>
-							</div>
-							<a href="https://medium.com/p/c6af752f387a" class="read-article"
-								>Read Article</a
-							>
+	<!-- Blog Section -->
+	<section id="blog">
+		<div class="container">
+			<h2>Top Articles</h2>
+			<div class="blog-posts">
+				<div class="blog-post">
+					<img src="assets\images\SAS_proc_freq_with_Python.png" alt="SAS Proc with Python image" />
+					<h3>Can we get SAS Proc Freq with Python?</h3>
+					<div class="metrics-and-button">
+						<div class="metrics">
+							<p><i class="fas fa-hands-clapping"></i>16</p>
+							<p><i class="fas fa-eye"></i>9k</p>
 						</div>
+						<a href="https://medium.com/p/c6af752f387a" class="read-article">Read Article</a>
 					</div>
-					<div class="blog-post">
-						<img
-							src="assets\images\bq_architecture.png"
-							alt="SAS Proc with Python image" />
-						<h3>Bigquery Architecture — Explained</h3>
-						<div class="metrics-and-button">
-							<div class="metrics">
-								<p><i class="fas fa-hands-clapping"></i> 11</p>
-								<p><i class="fas fa-eye"></i> 3.1k</p>
-							</div>
-							<a href="https://medium.com/p/c6af752f387a" class="read-article"
-								>Read Article</a
-							>
+				</div>
+				<div class="blog-post">
+					<img src="assets\images\bq_architecture.png" alt="SAS Proc with Python image" />
+					<h3>Bigquery Architecture — Explained</h3>
+					<div class="metrics-and-button">
+						<div class="metrics">
+							<p><i class="fas fa-hands-clapping"></i> 11</p>
+							<p><i class="fas fa-eye"></i> 3.1k</p>
 						</div>
+						<a href="https://medium.com/p/c6af752f387a" class="read-article">Read Article</a>
 					</div>
-					<div class="blog-post">
-						<img
-							src="assets\images\SAS_proc_freq_with_Python.png"
-							alt="SAS Proc with Python image" />
-						<h3>GCP Looker Studio for Data Viz</h3>
-						<div class="metrics-and-button">
-							<div class="metrics">
-								<p><i class="fas fa-hands-clapping"></i> 7</p>
-								<p><i class="fas fa-eye"></i> 209</p>
-							</div>
-							<a href="https://medium.com/p/c6af752f387a" class="read-article"
-								>Read Article</a
-							>
+				</div>
+				<div class="blog-post">
+					<img src="assets\images\SAS_proc_freq_with_Python.png" alt="SAS Proc with Python image" />
+					<h3>GCP Looker Studio for Data Visualization</h3>
+					<div class="metrics-and-button">
+						<div class="metrics">
+							<p><i class="fas fa-hands-clapping"></i> 7</p>
+							<p><i class="fas fa-eye"></i> 209</p>
 						</div>
+						<a href="https://medium.com/p/c6af752f387a" class="read-article">Read Article</a>
 					</div>
+				</div>
 
-					<div class="blog-post">
-						<img
-							src="assets\images\SAS_proc_freq_with_Python.png"
-							alt="SAS Proc with Python image" />
-						<h3>Get Started with GCP's Cloud Composer</h3>
-						<div class="metrics-and-button">
-							<div class="metrics">
-								<p><i class="fas fa-hands-clapping"></i> 3</p>
-								<p><i class="fas fa-eye"></i> 209</p>
-							</div>
-							<a href="https://medium.com/p/c6af752f387a" class="read-article"
-								>Read Article</a
-							>
+				<div class="blog-post">
+					<img src="assets\images\SAS_proc_freq_with_Python.png" alt="SAS Proc with Python image" />
+					<h3>Get Started with GCP's Cloud Composer</h3>
+					<div class="metrics-and-button">
+						<div class="metrics">
+							<p><i class="fas fa-hands-clapping"></i> 3</p>
+							<p><i class="fas fa-eye"></i> 209</p>
 						</div>
+						<a href="https://medium.com/p/c6af752f387a" class="read-article">Read Article</a>
 					</div>
+				</div>
 
-					<div class="blog-post">
-						<img
-							src="assets\images\SAS_proc_freq_with_Python.png"
-							alt="SAS Proc with Python image" />
-						<h3>Agile Project Management Jira Software</h3>
-						<div class="metrics-and-button">
-							<div class="metrics">
-								<p><i class="fas fa-hands-clapping"></i> 14</p>
-								<p><i class="fas fa-eye"></i> 203</p>
-							</div>
-							<a href="https://medium.com/p/c6af752f387a" class="read-article"
-								>Read Article</a
-							>
+				<div class="blog-post">
+					<img src="assets\images\SAS_proc_freq_with_Python.png" alt="SAS Proc with Python image" />
+					<h3>Agile Project Management Jira Software</h3>
+					<div class="metrics-and-button">
+						<div class="metrics">
+							<p><i class="fas fa-hands-clapping"></i> 14</p>
+							<p><i class="fas fa-eye"></i> 203</p>
 						</div>
+						<a href="https://medium.com/p/c6af752f387a" class="read-article">Read Article</a>
 					</div>
+				</div>
 
-					<div class="blog-post">
-						<img
-							src="assets\images\SAS_proc_freq_with_Python.png"
-							alt="SAS Proc with Python image" />
-						<h3>Intro to Cloud Composer by GCP</h3>
-						<div class="metrics-and-button">
-							<div class="metrics">
-								<p><i class="fas fa-hands-clapping"></i> 52</p>
-								<p><i class="fas fa-eye"></i> 108</p>
-							</div>
-
-							<a href="https://medium.com/p/c6af752f387a" class="read-article"
-								>Read Article</a
-							>
+				<div class="blog-post">
+					<img src="assets\images\SAS_proc_freq_with_Python.png" alt="SAS Proc with Python image" />
+					<h3>Introduction to Cloud Composer by GCP</h3>
+					<div class="metrics-and-button">
+						<div class="metrics">
+							<p><i class="fas fa-hands-clapping"></i> 52</p>
+							<p><i class="fas fa-eye"></i> 108</p>
 						</div>
+
+						<a href="https://medium.com/p/c6af752f387a" class="read-article">Read Article</a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Contact Section -->
-		<section id="contact">
-			<div class="container">
-				<h2>Contact Me</h2>
-				<form id="contact-form" action="/send-email" method="POST">
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							placeholder="Your Name"
-							required />
-						<span class="error" id="name-error"></span>
-					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							placeholder="Your Email"
-							required />
-						<span class="error" id="email-error"></span>
-					</div>
-					<div class="form-group">
-						<label for="message">Message</label>
-						<textarea
-							id="message"
-							name="message"
-							placeholder="Your Message"
-							required></textarea>
-						<span class="error" id="message-error"></span>
-					</div>
-					<button type="submit">Send Message</button>
-				</form>
-			</div>
-		</section>
+	<!-- Contact Section -->
+	<section id="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<form id="contact-form" action="/send-email" method="POST">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" placeholder="Your Name" required />
+					<span class="error" id="name-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="Your Email" required />
+					<span class="error" id="email-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" placeholder="Your Message" required></textarea>
+					<span class="error" id="message-error"></span>
+				</div>
+				<div id="error-message-container">
+					<span id="error-message"></span>
+					<span id="success-message"></span>
+				</div>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+	</section>
 
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<div class="footer-content">
-					<div class="social-section">
-						<h3 class="social-heading">Social</h3>
-						<div class="social-links">
-							<a
-								href="https://linkedin.com/in/yourlinkedin"
-								target="_blank"
-								rel="noopener noreferrer"
-								><i class="fab fa-linkedin"></i
-							></a>
-							<a
-								href="https://twitter.com/yourtwitter"
-								target="_blank"
-								rel="noopener noreferrer"
-								><i class="fab fa-medium"></i
-							></a>
-							<a
-								href="https://github.com/yourgithub"
-								target="_blank"
-								rel="noopener noreferrer"
-								><i class="fab fa-github"></i
-							></a>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-content">
+				<div class="social-section">
+					<h3 class="social-heading">Social</h3>
+					<div class="social-links">
+						<div class="social-link">
+							<a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<span class="follower-count">900+</span>
+						</div>
+						<div class="social-link">
+							<a href="https://medium.com/@yourmedium" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-medium"></i>
+							</a>
+							<span class="follower-count">50+</span>
+						</div>
+						<div class="social-link">
+							<a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-github"></i>
+							</a>
+							<span class="follower-count">10+</span>
 						</div>
 					</div>
-					<div class="separator"></div>
-					<a href="#personal" class="personal-link">
-						<i class="fas fa-user"></i> Life Beyond Work
-					</a>
 				</div>
-				<p id="copyright">&copy; 2024 Pradeep Singh</p>
+				<div class="separator"></div>
+				<a href="#personal" class="personal-link">
+					<i class="fas fa-user"></i> Life Beyond Work
+				</a>
 			</div>
-		</footer>
-		<script
-			src="https://kit.fontawesome.com/13b54dd5d2.js"
-			crossorigin="anonymous"></script>
-		<script src="js\script.js"></script>
-	</body>
+			<p id="copyright">&copy; 2024 Pradeep Singh</p>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/13b54dd5d2.js" crossorigin="anonymous"></script>
+	<script src="js\script.js"></script>
+</body>
+
 </html>

@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 const path = require("path");
+const rateLimit = require("express-rate-limit");
 
 dotenv.config();
 
@@ -14,10 +15,28 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files
-app.use(express.static(path.join(__dirname, "../")));
 app.use("/assets", express.static(path.join(__dirname, "../assets")));
 app.use("/CSS", express.static(path.join(__dirname, "../CSS")));
 app.use("/js", express.static(path.join(__dirname, "../js")));
+
+// Rate limiting middleware
+const limiter = rateLimit({
+	windowMs: 60 * 60 * 1000, // 1 hour
+	max: 5, // limit each IP to 5 requests per windowMs
+	message: "Too many requests from this IP, please try again later",
+});
+
+// Custom middleware to log the number of requests from the current IP
+let requestsFromIP = {};
+
+app.use((req, res, next) => {
+	const clientIP = req.ip;
+	requestsFromIP[clientIP] = (requestsFromIP[clientIP] || 0) + 1;
+	console.log(`Requests from ${clientIP}: ${requestsFromIP[clientIP]}`);
+	next();
+});
+
+app.use("/send-email", limiter);
 
 // Route to handle form submission
 app.post("/send-email", (req, res) => {
@@ -51,9 +70,14 @@ app.post("/send-email", (req, res) => {
 			res.status(500).send("Failed to send email");
 		} else {
 			console.log("Email sent successfully:", info.response);
-			res.status(200).send("Email sent successfully");
+			res.sendFile(path.join(__dirname, "../mail-success.html"));
 		}
 	});
+});
+
+// Serve index.html for root path
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 // Start server
